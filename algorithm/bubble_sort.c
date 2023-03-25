@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-//Ã°ÅİÅÅĞòËã·¨
-//´ÓÄ©Î²¿ªÊ¼ÅÅĞò£¬´ÓĞ¡µ½´ó
+//å†’æ³¡æ’åºç®—æ³•
+//ä»æœ«å°¾å¼€å§‹æ’åºï¼Œä»å°åˆ°å¤§
 
 void bubble_sort(int *arr, int len);
 int main()
@@ -11,7 +11,7 @@ int main()
     int len = sizeof(arr) / sizeof(*arr);
 
     bubble_sort(arr, len);
-    printf("´ÓĞ¡µ½´óÃ°ÅİÅÅĞòºóµÄË³ĞòÎª: \n");
+    printf("ä»å°åˆ°å¤§å†’æ³¡æ’åºåçš„é¡ºåºä¸º: \n");
 
     for(i=0; i<len; i++)
     {
@@ -20,7 +20,7 @@ int main()
     return 0;
 }
 
-/*Ã°ÅİÅÅĞò´ÓĞ¡µ½´ó£¬arrÎªÊäÈëÊı×é£¬lenÎªÊı¾İ³¤¶È*/
+/*å†’æ³¡æ’åºä»å°åˆ°å¤§ï¼Œarrä¸ºè¾“å…¥æ•°ç»„ï¼Œlenä¸ºæ•°æ®é•¿åº¦*/
 void bubble_sort(int *arr, int len)
 {
     int i, j, temp;
