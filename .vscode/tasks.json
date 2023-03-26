@@ -3,13 +3,13 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe 生成活动文件",
-            "command": "D:\\Install_address\\mingw64\\bin\\gcc.exe",
+            "command": "D:\\Install_address\\mingw64\\bin\\gcc.exe",    //gcc.exe文件路径
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "D:\\Install_address\\mingw64\\exe\\{fileBasenameNoExtension}.exe"
+                "D:\\Install_address\\mingw64\\exe\\{fileBasenameNoExtension}.exe"  //可执行文件生成路径
             ],
             "options": {
                 "cwd": "${fileDirname}"
