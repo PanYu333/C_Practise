@@ -11,17 +11,18 @@ int main()
 
     select_sort(arr, len);
 
-    printf("��С����ѡ��������˳��Ϊ: \n");
+    printf("选择排序后的顺序为: \n");
 
     for(i=0; i<len; i++)
     {
-        printf("%d\n", arr[i]);
+        printf("%d ", arr[i]);
     }
+    printf("\n");
+    
     return 0;
-
 }
 
-/*��С����ѡ������ arrΪ�������飬 lenΪ���ݳ���*/
+/*选择排序从小到大，arr为输入数组， len为数组长度*/
 void select_sort(int *arr, int len)
 {
     int i, j, min;
@@ -31,9 +32,9 @@ void select_sort(int *arr, int len)
         min = i;
         for(j=i+1; j<len; j++)
         {
-            if(arr[j] < arr[min])   //��С��������
+            if(arr[j] < arr[min])   //找到目标最小值
             {
-                min = j;        //�����Сֵ��λ��
+                min = j;        //记录最小值
             }
         }
         if(min != i)
@@ -43,7 +44,7 @@ void select_sort(int *arr, int len)
     }
 }
 
-/*������������*/
+/*交换两数*/
 void swap(int *a, int *b)
 {
     *a = *a + *b;
