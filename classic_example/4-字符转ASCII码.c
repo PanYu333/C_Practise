@@ -22,7 +22,7 @@ void single_ASCII()
     char c, enter;
     printf("请输入一个字符: ");
     scanf("%c", &c);            //字符类型输入按下回车，会存到缓存区
-    enter = getchar();                  //用getchar()吃掉这个字符
+    enter = getchar();          //用getchar()吃掉这个字符
 
     printf("%c的ASCII码值为 %d\n", c, c);
     printf("回车ASCII码值为 %d\n", enter);

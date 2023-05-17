@@ -1,5 +1,5 @@
 /**
- * this is an example about dynamic memory.
+ * 这是一个关于动态内存的例子
 */
 
 # include <stdio.h>
