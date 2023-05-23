@@ -1,5 +1,5 @@
 /**
- * This is an example of Link List.
+ * This is an example of Single Link List.
  * function: insert; delete; print;
  */
 
