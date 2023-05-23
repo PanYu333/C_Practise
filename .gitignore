@@ -1,5 +1,5 @@
+.exe
 test.c
 test.cpp
 *.json
 .vscode
-.exe
