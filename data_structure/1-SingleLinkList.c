@@ -81,7 +81,6 @@ void Delete(int addr)
 void Print()
 {
     Node *temp = head;
-    temp = head;
     printf("The List:");
     while (temp != NULL)
     {
