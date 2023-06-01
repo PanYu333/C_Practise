@@ -38,10 +38,9 @@ bool ArePair(char left, char right)
 
 bool CheckBalancedParentheses(const string str)
 {
-    int n = str.length();
     stack<char> S;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < str.length(); i++)
     {
         if (str[i] == '(' || str[i] == '[' || str[i] == '{') {
             S.push(str[i]);
