@@ -4,3 +4,4 @@ test.cpp
 *.json
 .vscode
 build
+test.exe
