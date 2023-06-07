@@ -14,7 +14,7 @@ typedef struct BSTNode
     struct BSTNode *right;
 } BSTNode;
 
-BSTNode *Insert(BSTNode *root, int data);
+BSTNode* Insert(BSTNode *root, int data);
 char Search(BSTNode *root, int data);
 
 int main()
