@@ -1,6 +1,7 @@
 /**
  * Binary Search Tree -Implemention in C
- * Simple program to create a BST of integers and search an element in it.  
+ * Simple program to create a BST of integers and search an element in it. 
+ * Also can find the max and min in BST.
 */
 
 #include <stdio.h>
@@ -16,6 +17,8 @@ typedef struct BSTNode
 
 BSTNode* Insert(BSTNode *root, int data);
 char Search(BSTNode *root, int data);
+int FindMin(BSTNode *root);
+int FindMax(BSTNode *root);
 
 int main()
 {
@@ -25,6 +28,7 @@ int main()
     root = Insert(root, 10);
     root = Insert(root, 20);
     root = Insert(root, 30);
+    root = Insert(root, 5);
 
     int number;
     printf("Enter a number be searched: ");
@@ -33,6 +37,11 @@ int main()
         printf("Found.\n");
     else
         printf("No Found.\n");
+
+    int max = FindMax(root);
+    int min = FindMin(root);
+    printf("Max number is : %d, Min number is : %d\n", max, min);
+
 }
 
 /*Function to create a new Node in heap.*/
@@ -73,4 +82,28 @@ char Search(BSTNode *root, int data)
     else {
         return Search(root->right, data);
     }
+}
+
+/*Find the minimum in BST*/
+int FindMin(BSTNode *root) 
+{
+    if (root == NULL) {
+        return -1;
+    }
+    else if (root->left == NULL) {
+        return root->data;
+    }
+    return FindMin(root->left);
+}
+
+/*Find the maximum in BST*/
+int FindMax(BSTNode *root) 
+{
+    if (root == NULL) {
+        return -1;
+    }
+    else if (root->right == NULL) {
+        return root->data;
+    }
+    return FindMax(root->right);
 }
