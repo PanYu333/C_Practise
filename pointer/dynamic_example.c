@@ -12,7 +12,7 @@ int *use_realloc(int *A, int n);
 int main()
 {
     int n;
-    printf("ENter size of array\n");
+    printf("Enter size of array\n");
     scanf("%d", &n);
     // int A[n];   //编译报错，运行期间必须事先知道数组的大小，方括号内的值不可为变量
     int *A;
